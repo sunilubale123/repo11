@@ -8,7 +8,7 @@ on:
 
 #define jobs
 jobs: 
-  prctice actions:
+  prctice_actions:
     runs-on: ubuntu-latest
     steps:
     - name: checkout code
@@ -17,5 +17,5 @@ jobs:
       run: python --version
     - name: print welcome message
       run: echo "welcome to avd"
-          
+
 
