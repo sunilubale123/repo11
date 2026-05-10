@@ -8,9 +8,9 @@ on:
 
 jobs:
   ci-cd_pipeline:
-    runs-on:ubuntu-latest
-    steps
-      - name:checkout code
-        uses:actions/checkout@v2
-      - name:print welcome message
-        run:echo 'welcome to github actions'
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: print welcome message
+        run: echo 'welcome to github actions'
