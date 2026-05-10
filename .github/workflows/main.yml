@@ -1,5 +1,5 @@
 #name of workflow
-name:run python program
+name: python program
 #define trigger
 on:
   push:
@@ -7,11 +7,10 @@ on:
       - main
 
 jobs:
-  ci-cd pipeline:
+  ci-cd_pipeline:
     runs-on:ubuntu-latest
     steps:
       - name:checkout code
         uses:actions/checkout@v2
       - name:print welcome message
         run:echo 'welcome to github actions'
-          
