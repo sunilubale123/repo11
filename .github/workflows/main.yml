@@ -1,1 +1,17 @@
+#name of workflow
+name:run python program
+#define trigger
+on:
+  push:
+    branches:
+      - main
 
+jobs:
+  ci-cd pipeline:
+    runs-on:ubuntu-latest
+    steps:
+      - name:checkout code
+        uses:actions/checkout@v2
+      - name:print welcome message
+        run:echo 'welcome to github actions'
+          
